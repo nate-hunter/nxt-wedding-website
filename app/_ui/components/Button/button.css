@@ -1,0 +1,76 @@
+.nl-button {
+  --button-padding-xs: 1.5px 3px;
+  --button-padding-sm: 2px 3px;
+  --button-padding-md: 2.5px 5px;
+  --button-padding-lg: 6px 8px;
+  /* --button-padding-default: var(--button-padding-md); */
+  /* --button-padding: 2.5px 8px; */
+  --button-padding: var(--sp-2) var(--sp0);
+
+  --button-font-size-xs: 0.6875rem;
+  --button-font-size-sm: 0.815rem;
+  --button-font-size-md: 1rem;
+  --button-font-size-lg: 1.25rem;
+  --button-font-size: var(var(--button-font-size-md));
+
+  --button-bg-color: var(--color-default);
+  --button-bg-color-hovered: var(--color-default-op-75);
+  --button-bg-color-inverted: var(--color-default-op-20);
+  --button-bg-color-inverted-hovered: var(--color-default-op-40);
+
+  --button-font-color: var(--font-color-ondark);
+  --button-font-inverted: var(--font-color-light);
+  --button-font-inverted-hovered: var(--font-color-light);
+
+  --button-border-size: 1px;
+  --button-border-color: transparent;
+
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  /* text-align: center; */
+
+  padding: var(--button-padding);
+  border: var(--button-border-size) solid var(--button-border-color);
+  border-radius: var(--border-straight);
+  background-color: var(--button-bg-color);
+  color: var(--button-font-color);
+  font-size: var(--button-font-size);
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.25s ease;
+}
+
+.nl-button:hover {
+  background-color: var(--button-bg-color-hovered);
+}
+
+.nl-button.is-inverted {
+  background-color: var(--button-bg-color-inverted);
+  color: var(--button-font-inverted);
+}
+
+.nl-button.is-inverted:hover {
+  background-color: var(--button-bg-color-inverted-hovered);
+  color: var(--button-font-inverted-hovered);
+}
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
