@@ -1,0 +1,213 @@
+/* TODO: Narrow down these fonts for only those that are used */
+
+/* ######## Alatsi ######## */
+@font-face {
+  font-family: 'Alatsi';
+  src: url('../public/fonts/Alatsi/Alatsi-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ######## Cutive ######## */
+@font-face {
+  font-family: 'Cutive';
+  src: url('../public/fonts/Cutive/Cutive-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cutive Mono';
+  src: url('../public/fonts/Cutive_Mono/CutiveMono-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ######## EB Garamond (VARIABLE) ######## */
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('../public/fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf');
+  font-weight: 400 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EB Garamond Italic';
+  src: url('../public/fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf');
+  font-weight: 400 800;
+  font-style: italic;
+}
+/* @font-face {
+  font-family: 'EB Garamond';
+  src: url('../public/fonts/EB_Garamond/static/EBGaramond-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: 'EB Garamond Bold';
+  src: url('../public/fonts/EB_Garamond/static/EBGaramond-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EB Garamond Bold Italic';
+  src: url('../public/fonts/EB_Garamond/static/EBGaramond-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'EB Garamond Extra Bold';
+  src: url('../public/fonts/EB_Garamond/static/EBGaramond-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EB Garamond Extra Bold Italic';
+  src: url('../public/fonts/EB_Garamond/static/EBGaramond-ExtraBoldItalic.ttf');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'EB Garamond Italic';
+  src: url('../public/fonts/EB_Garamond/static/EBGaramond-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'EB Garamond Medium';
+  src: url('../public/fonts/EB_Garamond/static/EBGaramond-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EB Garamond Medium Italic';
+  src: url('../public/fonts/EB_Garamond/static/EBGaramond-MediumItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'EB Garamond Semi Bold';
+  src: url('../public/fonts/EB_Garamond/static/EBGaramond-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EB Garamond Semi Bold Italic';
+  src: url('../public/fonts/EB_Garamond/static/EBGaramond-SemiBoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* ######## Limelight ######## */
+@font-face {
+  font-family: 'Limelight';
+  src: url('../public/fonts/Limelight/Limelight-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ######## Monoton ######## */
+@font-face {
+  font-family: 'Monoton';
+  src: url('../public/fonts/Monoton/Monoton-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ######## Nanum Myeongjo ######## */
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  src: url('../public/fonts/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nanum Myeongjo Bold';
+  src: url('../public/fonts/Nanum_Myeongjo/NanumMyeongjo-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nanum Myeongjo Extra Bold';
+  src: url('../public/fonts/Nanum_Myeongjo/NanumMyeongjo-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* ######## Poppins ######## */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins/Poppins-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins Semi Bold';
+  src: url('../public/fonts/Poppins/Poppins-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('../public/fonts/Poppins/Poppins-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ######## Rosario ######## */
+@font-face {
+  font-family: 'Rosario';
+  src: url('../public/fonts/Rosario/static/Rosario-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rosario Semi Bold';
+  src: url('../public/fonts/Rosario/static/Rosario-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rosario Bold';
+  src: url('../public/fonts/Rosario/static/Rosario-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ######## Unbound (Variable) ######## */
+@font-face {
+  font-family: 'Unbound';
+  src: url('../public/fonts/Unbounded/Unbounded-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ######## Zen Tokyo Zoo ######## */
+@font-face {
+  font-family: 'Zen Tokyo Zoo';
+  src: url('../public/fonts/Zen_Tokyo_Zoo/ZenTokyoZoo-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p,
+span {
+  font-size: 1.125rem;
+  font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nanum Myeongjo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

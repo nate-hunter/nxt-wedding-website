@@ -1,0 +1,20 @@
+.exp-input {
+  --input-border-color: var(--border-color-onlight);
+  /* --input-bg-color: transparent; */
+  --input-bg-color: var(--color-white-2);
+  --input-font-color: var(--font-color-onlight);
+  --input-font-size-default: 1.125rem;
+
+  display: block;
+  width: 100%;
+  padding: 3px;
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--border-straight);
+  background-color: var(--input-bg-color);
+  color: var(--input-font-color);
+  font-size: var(--input-font-size-default);
+  transition: all 0.15s ease-in-out;
+
+  /* TEST: */
+  /* background-color: pink; */
+}
