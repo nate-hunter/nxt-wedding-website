@@ -21,20 +21,20 @@ export default function Home() {
         <section className="flex gap-[var(--sp2)]">
           {/* LEFT SECTION - DETAILS */}
           <div className="flex flex-col gap-[var(--sp1)]">
-            <div className="event-info-container">
-              <h3 className="event-info--txt-header">Ceremony + Reception</h3>
+            <div>
+              <h3>Ceremony + Reception</h3>
 
               <div className="flex gap-[var(--sp2)]">
                 <div className="flex flex-col">
-                  <h4 className="event-info--col-txt-header">Where</h4>
-                  <a className="event-info--col-txt-link">The Charming Estate at Royal Hawaiian Golf Club</a>
-                  <a className="event-info--col-txt-link">...Address...</a>
+                  <h4 className="font-bold uppercase">Where</h4>
+                  <a>The Charming Estate at Royal Hawaiian Golf Club</a>
+                  <a>...Address...</a>
                 </div>
 
                 <div className="flex flex-col">
-                  <h4 className="event-info--col-txt-header">When</h4>
-                  <p className="event-info--col-txt">June 14, 2025</p>
-                  <p className="event-info--col-txt">4:00pm</p>
+                  <h4 className="font-bold uppercase">When</h4>
+                  <p>June 14, 2025</p>
+                  <p>4:00pm</p>
                 </div>
               </div>
             </div>
