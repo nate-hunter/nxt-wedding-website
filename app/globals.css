@@ -2,20 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('../styles/tokens.css');
+@import url('../styles/fonts.css');
+@import url('../styles/components.exp.css');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: var(--surface-color-light-exp-3);
+  --foreground: var(--font-color-onlight);
+
+  --ratio: 1.618;
+  --base: 1rem;
+  --sp5: calc(var(--sp4) * var(--ratio));
+  --sp4: calc(var(--sp3) * var(--ratio));
+  --sp3: calc(var(--sp2) * var(--ratio));
+  --sp2: calc(var(--sp1) * var(--ratio));
+  --sp1: calc(var(--sp0) * var(--ratio));
+  --sp0: var(--base);
+  --sp-1: calc(var(--sp0) / var(--ratio));
+  --sp-2: calc(var(--sp-1) / var(--ratio));
+  --sp-3: calc(var(--sp-2) / var(--ratio));
+  --sp-4: calc(var(--sp-3) / var(--ratio));
+  --sp-5: calc(var(--sp-4) / var(--ratio));
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* line-height: 1.5; */
 }
