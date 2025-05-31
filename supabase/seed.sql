@@ -1,0 +1,3 @@
+-- Seed initial data for your database here
+-- Example:
+-- insert into public.profiles (id, email, full_name) values ('some-uuid', 'test@example.com', 'Test User');
