@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
       bodySizeLimit: '2mb',
     },
   },
+  output: 'standalone',
+  staticPageGenerationTimeout: 120,
 };
 
 export default nextConfig;

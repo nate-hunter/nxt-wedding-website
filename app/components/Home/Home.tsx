@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // import { usePathname } from 'next/navigation';
 // import Link from 'next/link';
 import Image from 'next/image';
@@ -17,6 +17,15 @@ type HomeSections = 'DETAILS' | 'SCHEDULE' | 'TRAVEL' | 'DRESS_CODE' | 'THINGS_T
 export default function Home() {
   // const pathname = usePathname();
   const [section, setSection] = useState<HomeSections>('DETAILS');
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null; // or a loading state
+  }
 
   // console.log('\n---------> PATH:', pathname);
 
