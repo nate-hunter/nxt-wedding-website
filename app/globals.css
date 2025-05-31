@@ -7,9 +7,8 @@
 @import url('../styles/components.exp.css');
 
 :root {
-  /* --background: var(--surface-color-light-exp-3); */
-  --background: var(--surface-color-light-exp-3);
-  --foreground: var(--font-color-onlight);
+  --background: #ffffff;
+  --foreground: #000000;
   --ratio: 1.618;
   --base: 1rem;
   --sp5: calc(var(--sp4) * var(--ratio));
