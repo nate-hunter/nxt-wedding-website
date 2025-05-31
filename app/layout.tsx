@@ -7,14 +7,15 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Nate & Lisa Wedding',
   description: 'Join us in celebrating our wedding',
+  viewport: 'width=device-width, initial-scale=1',
+  themeColor: '#ffffff',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body
-      // suppressHydrationWarning // This resolves 'FormField' warning?
-      >
+    <html lang="en" suppressHydrationWarning>
+      <head />
+      <body suppressHydrationWarning>
         <AuthProvider>
           <div className="flex justify-between items-center mb-6 px-[var(--sp0)]">
             <div className="flex flex-col items-center">
