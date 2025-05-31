@@ -2,12 +2,16 @@ import { AuthProvider } from '@/app/contexts/AuthContext';
 import './globals.css';
 import Navbar from './components/Navbar';
 import { GinkoIcon } from './_ui/components/Icons';
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
 
 export const metadata: Metadata = {
   title: 'Nate & Lisa Wedding',
   description: 'Join us in celebrating our wedding',
-  viewport: 'width=device-width, initial-scale=1',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
   themeColor: '#ffffff',
 };
 
