@@ -1,0 +1,65 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 55px;
+  /* width: 100vw; */
+  width: 100%;
+
+  /* EXP: */
+  /* background-color: pink; */
+
+  /* grid-area: 'header'; */
+  /* padding: 21px 34px; */
+  padding: 13px 21px;
+}
+
+.topbar-title-text {
+  font-family: 'Alatsi';
+  font-family: 'Cutive';
+  font-family: 'EB Garamond';
+  font-family: 'Limelight';
+  /* font-family: 'Monoton'; */
+  /* font-family: 'Nanum Myeongjo'; */
+  /* font-family: 'Poppins'; */
+  /* font-family: 'Poppins Semi Bold'; */
+  /* font-family: 'Poppins Bold'; */
+  /* font-family: 'Rosario Bold'; */
+  /* font-family: 'Unbound'; */
+  /* font-family: 'Zen Tokyo Zoo'; */
+  /* font-size: 60px; */
+  /* text-size-adjust: 100%; */
+}
+
+.topbar-nav-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: none;
+  background: none;
+  color: var(--font-color);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.topbar-nav-toggle:hover {
+  background-color: var(--color-default-op-09);
+}
+
+.topbar nav {
+  display: flex;
+  column-gap: 13px;
+}
+
+.topbar--navlink {
+  color: var(--font-color);
+  text-transform: uppercase;
+  /* font-weight: 600; */
+}
+
+.topbar--navlink.is-active-link {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1.5px;
+  font-family: 'Nanum Myeongjo Extra Bold';
+  /* font-weight: 800; */
+}

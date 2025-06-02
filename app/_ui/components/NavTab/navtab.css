@@ -1,0 +1,15 @@
+.navtab {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.navtab:hover {
+  text-decoration: underline;
+}
+
+.navtab.is-active {
+  font-weight: 800;
+  text-decoration: underline;
+}

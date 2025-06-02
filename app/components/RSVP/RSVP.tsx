@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import { createRSVP } from '@/app/actions/rsvps/create-rsvp';
 
 import Button from '@/app/_ui/components/Button';
-import { redirect } from 'next/navigation';
 
 /** NOTES:
  *  - Must be authenticated User to submit an RSVP
@@ -18,7 +17,7 @@ import { redirect } from 'next/navigation';
 
 type RSVPFormErrors = Record<string, string>;
 
-export default function RSVPDemo() {
+export default function RSVP() {
   const [userFirstName, setUserFirstName] = useState('');
   const [userLastName, setUserLastName] = useState('');
   const [userEmail, setUserEmail] = useState('');
@@ -55,19 +54,7 @@ export default function RSVPDemo() {
     const resp = await createRSVP(formData);
     console.log({ resp });
 
-    if (resp.success) {
-      setIsLoading(false);
-      setUserFirstName('');
-      setUserLastName('');
-      setUserEmail('');
-      setUserPhone('');
-      // setIsAttending('')
-      redirect('/');
-    }
-
-    if (!resp.success) {
-      console.log('\n\nSOMETHING DIDNT WORK\n\n');
-    }
+    setIsLoading(false);
 
     // --- Trigger toast...
 
@@ -85,14 +72,7 @@ export default function RSVPDemo() {
   // console.log({ userFirstName, userLastName, userEmail, userPhone, isAttending });
 
   return (
-    <div
-      className="w-760 min-w-450 m-auto my-10 px-[var(--sp2)]"
-      style={{
-        // backgroundColor: 'goldenrod',
-        border: '3px solid var(--color-secondary)',
-      }}
-    >
-      {/* <div className="max-w-md max-auto my-10 px-[var(--sp2)]"> */}
+    <div className="max-w-md max-auto my-10">
       {/* --------------------- PAGE HEADER --------------------- */}
       {/* PAGE TITLE */}
       <div className="mb-4">
@@ -101,9 +81,8 @@ export default function RSVPDemo() {
       {/* PAGE INTRO TEXT */}
       <div className="mb-6">
         <p>We are excited that you can join us!</p>
-        <p>Please fill out the below form for each member in your party.</p>
         <p>
-          Please note that some fields are required (<span>*</span>).
+          Please fill out the below form and please note that some fields are required (<span>*</span>).
         </p>
       </div>
 
@@ -116,7 +95,7 @@ export default function RSVPDemo() {
         <h2>DETAILS...</h2>
         <p>Saturday, 06/14/2025</p>
 
-        <div className="mt-4 max-w-md">
+        <div className="mt-4">
           {/* TODO: Convert 'Button' as link */}
           <Button>
             MAP LINK... <span>MAP ICON...</span>
@@ -125,8 +104,9 @@ export default function RSVPDemo() {
       </div>
 
       {/* --------------------- RSVP FORM --------------------- */}
+      <p>RSVP Form...</p>
       <form onSubmit={handleRSVPSubmit} className="space-y-6">
-        <div className="flex gap-[var(--sp0)]">
+        <div>
           {/* REQ -> First Name */}
           <label htmlFor="first_name">First Name</label>
           <input
@@ -140,7 +120,7 @@ export default function RSVPDemo() {
           {errors.first_name && <p className="text-red-500, text-sm mt-1">{errors.first_name}</p>}
         </div>
 
-        <div className="flex gap-[var(--sp0)]">
+        <div>
           {/* REQ -> Last Name */}
           <label htmlFor="last_name">Last Name</label>
           <input
@@ -155,7 +135,7 @@ export default function RSVPDemo() {
         </div>
 
         {/* REQ -> Email */}
-        <div className="flex gap-[var(--sp0)]">
+        <div>
           <label htmlFor="email">Email</label>
           <input
             id="email"
@@ -169,7 +149,7 @@ export default function RSVPDemo() {
         </div>
 
         {/* REQ -> Phone */}
-        <div className="flex gap-[var(--sp0)]">
+        <div>
           <label htmlFor="phone">Phone</label>
           <input
             id="phone"
@@ -184,7 +164,7 @@ export default function RSVPDemo() {
 
         {/* REQ -> Is Attending */}
         {/* TODO: Make radio? */}
-        <div className="flex gap-[var(--sp0)]">
+        <div>
           <label htmlFor="is_attending">Attending</label>
           <input
             id="is_attending"
@@ -193,12 +173,6 @@ export default function RSVPDemo() {
             // onChange={(e) => setIsAttending(e.target.value)}
             // required
           />
-          {errors.is_attending && <p className="text-red-500, text-sm mt-1">{errors.is_attending}</p>}
-        </div>
-
-        <div className="flex gap-[var(--sp0)]">
-          <label>How many in your party</label>
-          <input type="number" value={1} />
           {errors.is_attending && <p className="text-red-500, text-sm mt-1">{errors.is_attending}</p>}
         </div>
 
@@ -217,8 +191,6 @@ export default function RSVPDemo() {
         {/* Departure Date */}
         {/* Stay Location */}
         {/* Has Rental Car */}
-
-        <Button>I&apos;m filling out this form for my party</Button>
 
         <div>
           <Button type="submit" disabled={isLoading}>
