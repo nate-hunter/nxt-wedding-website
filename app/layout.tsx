@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 
 import './globals.css';
+import Navbar from './(pages)/(root)/Navbar';
 
 export const metadata: Metadata = {
   title: 'Lisa + Nate | Wedding',
@@ -23,14 +23,11 @@ export default function RootLayout({
             <h1 className="font-[family-name:Limelight] uppercase text-[34px]">Nate & Lisa</h1>
             <p>June 14, 2025</p>
           </div>
-          <nav className="flex gap-5 uppercase">
-            <Link href="/">Home</Link>
-            <Link href="/rsvp">RSVP</Link>
-            <a>Gallery</a>
-            <a>Details</a>
-          </nav>
+
+          <Navbar />
         </div>
-        {children}
+
+        <main>{children}</main>
       </body>
     </html>
   );
